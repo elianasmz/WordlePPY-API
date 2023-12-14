@@ -63,7 +63,7 @@ function init(){
                 }
 
                 GRID.appendChild(ROW);
-                terminar("<h1>GANASTE!:)</h1>")
+                terminar("<h1>GANASTE! :)</h1>")
                 return
             } else {
                 for (let i in palabra){
@@ -101,7 +101,7 @@ function init(){
                 // Por cada for ejecutado se esta un intento
                 intentos --;
                 if (intentos==0){
-                    terminar("<h3>PERDISTE!😖 La palabra era "+ palabra + "</h3>")
+                    terminar("<h3>PERDISTE! :( La palabra era "+ palabra + "</h3>")
                 }
             }
             // Creamos la función terminar en caso de que si ganamos o perdemos
