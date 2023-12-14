@@ -33,10 +33,6 @@ h1 {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-button:active {
-  transform: scale(0.95);
-}
-
 .row-letter {
   width: 48px;
   height: 48px;
@@ -55,7 +51,7 @@ button:active {
   border: 1px solid #0CBABA;
 }
 
-button:active {
+.button:active {
   transform: scale(0.95);
 }
 
@@ -98,8 +94,8 @@ button:active {
   margin: 30px;
 }
 
-/* Responsive Styles */
-@media only screen and (max-width: 600px) {
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
   #guess-input {
     width: 100%;
   }
@@ -107,9 +103,7 @@ button:active {
   #guess-button {
     width: 100%;
   }
-}
 
-@media only screen and (max-width: 768px) {
   .row-letter {
     width: 30px;
     height: 30px;
@@ -119,5 +113,13 @@ button:active {
 
   .letter {
     min-width: 15px;
+  }
+}
+
+/* Estilos adicionales para dispositivos más pequeños */
+@media only screen and (max-width: 480px) {
+  #guess-input,
+  #guess-button {
+    font-size: 16px;
   }
 }
